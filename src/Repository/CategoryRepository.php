@@ -53,4 +53,20 @@ class CategoryRepository
         } catch(\PDOException $e) {}
         return false;
     }
+
+    public function findAllCategory(): array
+    {
+        try {
+            //1 Ecrire la requête
+            $sql = "SELECT c.id, c.category_name AS `name` FROM category AS c";
+            //2 Préparer la requête
+            $req = $this->connect->prepare($sql);
+            //3 Exécuter la requête
+            $req->execute();
+            //4 Récupérer la réponse
+            $req->setFetchMode(\PDO::FETCH_CLASS, Category::class);
+            $categories = $req->fetchAll();
+        } catch(\PDOException $e) {}
+        return $categories;
+    }
 }
