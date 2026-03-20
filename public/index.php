@@ -12,23 +12,21 @@ $path = isset($url['path']) ? $url['path'] : '/';
 
 //Importer les controllers
 use App\Controller\HomeController;
+use App\Controller\CategoryController;
 
 //instancier les controllers
 $homeController = new HomeController();
-
+$categoryController = new CategoryController();
 //Routeur (test)
 switch ($path) {
     case '/':
         $homeController->index();
         break;
-    case '/register':
-        echo "Inscription";
+    case '/category/new':
+        $categoryController->createCategory();
         break;
-    case '/login':
-        echo "connexion";
-        break;
-    case '/task/all':
-        echo "liste des taches";
+    case '/category/all':
+        $categoryController->showAllCategory();
         break;
     default:
         echo "404 la page n'existe pas";
