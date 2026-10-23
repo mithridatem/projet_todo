@@ -1,0 +1,28 @@
+{
+  "name": "projet_todo_djawed",
+  "version": "1.0.0",
+  "description": "Projet de cours PHP POO todolist (DEV312503)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myreus/projet_todo_Djawed.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Myreus/projet_todo_Djawed/issues"
+  },
+  "homepage": "https://github.com/Myreus/projet_todo_Djawed#readme",
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  },
+  "allowScripts": {
+    "cypress@16.2.0": true
+  }
+}
