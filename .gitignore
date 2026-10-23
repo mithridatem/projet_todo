@@ -1,3 +1,4 @@
-vendor/
+pnpvendor/
 .env
 composer.lock
+node_modules
