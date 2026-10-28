@@ -1,0 +1,27 @@
+{
+  "name": "projet_todo",
+  "version": "1.0.0",
+  "description": "Projet de cours PHP POO todolist (DEV312503)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frida144/projet_todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Frida144/projet_todo/issues"
+  },
+  "homepage": "https://github.com/Frida144/projet_todo#readme",
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  }
+}
